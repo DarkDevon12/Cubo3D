@@ -57,3 +57,52 @@ body {
     
 }
 
+.color-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.color-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; /* Texto branco dentro dos botões */
+    border: none; /* Remove a borda padrão dos botões */
+    background-size: 200% 100%; /* Aumenta o tamanho do background */
+    transition: background-position 0.5s ease; /* Animação de transição */
+}
+
+.color-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.color-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; /* Texto branco dentro dos botões */
+    border: none; /* Remove a borda padrão dos botões */
+    background-size: 200% 100%; /* Aumenta o tamanho do background */
+    transition: background-position 0.5s ease; /* Animação de transição */
+}
+
+.color-buttons button:hover {
+    background-position: right center; /* Move o gradiente para a direita no hover */
+}
+
+.red-button {
+    background-image: linear-gradient(to right, #ff0000, #000);
+}
+
+.green-button {
+    background-image: linear-gradient(to right, #00ff00, #000);
+}
+
+.blue-button {
+    background-image: linear-gradient(to right, #0000ff, #000);
+}
+
+.purple-button {
+    background-image: linear-gradient(to right, #2803ff, rgb(255, 0, 255));
+}

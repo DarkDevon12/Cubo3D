@@ -18,5 +18,25 @@
             <div class="s6"></div>
         </div>
     </div>
+
+    <div class="color-buttons">
+        <button class="red-button" onclick="changeColor('.red-button')">Red Gradient</button>
+        <button class="green-button" onclick="changeColor('.green-button')">Green Gradient</button>
+        <button class="blue-button" onclick="changeColor('.blue-button')">Blue Gradient</button>
+        <button class="purple-button" onclick="changeColor('.purple-button')">Purple Gradient</button>
+    </div>
+
+    <script>
+        function changeColor(buttonClass) {
+            var cubeFaces = document.querySelectorAll('.cube > div');
+            var button = document.querySelector(buttonClass);
+            var computedStyle = window.getComputedStyle(button);
+            var backgroundColor = computedStyle.getPropertyValue('background-image');
+            
+            cubeFaces.forEach(face => {
+                face.style.backgroundImage = backgroundColor;
+            });
+        }
+    </script>
 </body>
 </html>
